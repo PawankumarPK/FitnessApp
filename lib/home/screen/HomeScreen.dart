@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget checkListWithBMI() {
-    if (CustomObject.bmi <= 30) {
+    if (CustomObject.bmi <= 50) {
       return ListView.builder(
           scrollDirection: Axis.vertical,
           physics: const BouncingScrollPhysics(),
@@ -70,7 +70,7 @@ class _HomeScreenState extends State<HomeScreen> {
               fullDetails: bodyType.fullDetails,
             );
           });
-    } else if (CustomObject.bmi >= 31 && CustomObject.bmi <= 80) {
+    } else if (CustomObject.bmi >= 51 && CustomObject.bmi <= 80) {
       return ListView.builder(
           scrollDirection: Axis.vertical,
           physics: const BouncingScrollPhysics(),
@@ -113,7 +113,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void chat(BuildContext context) {
     dynamic conversationObject = {
-      'appId': '106378000d07a4f1cfe2d55138ca1c912',
+      'appId': '465d472b7b7f3bf65e576b9801323d26',
       // The [APP_ID](https://dashboard.kommunicate.io/settings/install) obtained from kommunicate dashboard.
     };
 

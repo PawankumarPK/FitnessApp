@@ -264,7 +264,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
     flutterToast.toast("Profile Updated Successfully");
 
-    calculateBMI();
+    CustomObject.bmi = int.parse(enterWeightController.text);
+    print("=======<><><><>  " +  CustomObject.bmi.toString());
+
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (context) => HomeScaffold()));
+    //calculateBMI();
   }
 
   void calculateBMI() {
@@ -277,7 +282,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
     CustomObject.bmi = calculateBMI.toInt();
 
+    print("-------->>>>>>  "+ CustomObject.bmi.toString());
+
     Navigator.of(context)
         .push(MaterialPageRoute(builder: (context) => HomeScaffold()));
   }
+
+
 }
