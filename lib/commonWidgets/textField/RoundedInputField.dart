@@ -39,6 +39,7 @@ class RoundedInputField extends StatelessWidget {
             fontFamily: ConstantFonts.poppinsRegular),
         decoration: InputDecoration(
           counterText: "",
+
           icon: SvgPicture.asset(
             icon,
             color: ConstantColors.darkGreyColor,

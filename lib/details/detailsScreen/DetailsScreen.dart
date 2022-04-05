@@ -1,3 +1,4 @@
+import 'package:fitness_app/commonWidgets/detailContainer/DetailContainer.dart';
 import 'package:fitness_app/dialogBox/RelatedDoctorsDialogBox.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +9,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../../commonWidgets/borderContainer/BorderRoundedContainer.dart';
 import '../../commonWidgets/button/RoundedButton.dart';
 import '../../commonWidgets/progressIndicator/CustomProgressIndicator.dart';
-import '../../commonWidgets/tournamentDetailContainer/TournamentDetailContainer.dart';
 import '../../res/ConstantColors.dart';
 import '../../res/ConstantFonts.dart';
 import '../../res/ConstantStrings.dart';
@@ -206,7 +206,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
                           ),
 
                           ///-------------------- Registration Period container ---------------------
-                          TournamentDetailContainer(
+                          DetailContainer(
                             title: "Full Description",
                             description: CustomObject.fullDetail,
                             readMoreButtonVisibility: false,

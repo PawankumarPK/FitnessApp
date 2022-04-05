@@ -9,7 +9,7 @@ import '../../utils/SizeConfig.dart';
 import '../../utils/customObject/CustomObject.dart';
 import '../borderContainer/BorderRoundedContainer.dart';
 
-class TournamentDetailContainer extends StatelessWidget {
+class DetailContainer extends StatelessWidget {
   final String title;
   final String description;
   String additionalText1;
@@ -19,7 +19,7 @@ class TournamentDetailContainer extends StatelessWidget {
   final tabSelectionValue;
 
 
-  TournamentDetailContainer(
+  DetailContainer(
       {required this.title,
       required this.description,
       this.additionalText1 = "",

@@ -136,13 +136,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         child: RoundedInputField(
                           textInputType: TextInputType.number,
                           maxLength: 10,
-                          icon: ImageAssets.smartPhone,
+                          icon: ImageAssets.person,
                           hintText: enterHeightController.text == ""
                               ? "Enter Height in feet"
                               : enterHeightController.text,
                           controller: enterHeightController,
                           onChanged: (value) {},
                         )),
+
 
                     ///--------------------- Weight ----------------------
                     Padding(
@@ -153,7 +154,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         child: RoundedInputField(
                           textInputType: TextInputType.number,
                           maxLength: 10,
-                          icon: ImageAssets.smartPhone,
+                          icon: ImageAssets.person,
                           hintText: enterWeightController.text == ""
                               ? "Enter Weight in kg"
                               : enterWeightController.text,
@@ -161,6 +162,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           onChanged: (value) {},
                         )),
 
+                    Text(
+                      "Your BMI = ${CustomObject.bmi}",
+                      style: TextStyle(
+                          fontFamily:
+                          ConstantFonts.poppinsSemiBold,
+                          color: ConstantColors.textBlackColor,
+                          fontSize: SizeConfig.defaultSize! *
+                              Dimens.size2),
+                    ),
                     SizedBox(
                       height: SizeConfig.defaultSize! * Dimens.size12,
                     )
@@ -190,7 +200,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
             ),
-          ]);
+     ]);
   }
 
   void postEditProfileData(BuildContext context) {
@@ -264,12 +274,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
     flutterToast.toast("Profile Updated Successfully");
 
-    CustomObject.bmi = int.parse(enterWeightController.text);
+   /* CustomObject.bmi = int.parse(enterWeightController.text);
     print("=======<><><><>  " +  CustomObject.bmi.toString());
 
     Navigator.of(context)
-        .push(MaterialPageRoute(builder: (context) => HomeScaffold()));
-    //calculateBMI();
+        .push(MaterialPageRoute(builder: (context) => HomeScaffold()));*/
+    calculateBMI();
   }
 
   void calculateBMI() {

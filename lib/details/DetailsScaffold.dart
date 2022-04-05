@@ -1,4 +1,4 @@
-import 'package:fitness_app/details/tournamentDetailsScreen/DetailsScreen.dart';
+import 'package:fitness_app/details/detailsScreen/DetailsScreen.dart';
 import 'package:flutter/material.dart';
 
 class DetailsScaffold extends StatelessWidget {

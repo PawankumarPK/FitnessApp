@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:fitness_app/profile/ProfileScaffold.dart';
 import 'package:fitness_app/res/ConstantColors.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -26,7 +27,7 @@ void main() async {
   );*/
   runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Gamein.games',
+      title: 'Fit Be',
       theme: ThemeData(
           primaryColor: ConstantColors.primaryColor,
           secondaryHeaderColor: ConstantColors.secondaryColor,

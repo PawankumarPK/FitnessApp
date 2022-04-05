@@ -39,7 +39,7 @@ class DoctorCardWidget extends StatelessWidget {
       child: InkWell(
         onTap: () => {launch("tel://$doctorContactNo")},
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          ///------------------------------- Tournament title --------------------------
+          ///------------------------------- title --------------------------
           SizedBox(height: SizeConfig.defaultSize! * Dimens.size1),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,

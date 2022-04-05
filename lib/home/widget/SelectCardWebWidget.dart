@@ -83,7 +83,6 @@ class SelectCardWebWidget extends StatelessWidget {
                       ),
                     ),
 
-                    ///------------------------------- Tournament title --------------------------
                     SizedBox(height: SizeConfig.defaultSize! * Dimens.size1),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -121,7 +120,7 @@ class SelectCardWebWidget extends StatelessWidget {
                       ],
                     ),
 
-                    ///------------------------------------ Game title ----------------------------
+                    ///------------------------------------  title ----------------------------
                     Padding(
                       padding: EdgeInsets.only(
                         left: SizeConfig.defaultSize! * Dimens.size1Point5,
@@ -131,7 +130,7 @@ class SelectCardWebWidget extends StatelessWidget {
                           children: [
 
 
-                            ///---------------------- Squad/solo text container -------------------
+
                             Padding(
                               padding: EdgeInsets.only(
                                   right: SizeConfig.defaultSize! *
@@ -152,7 +151,6 @@ class SelectCardWebWidget extends StatelessWidget {
                               ),
                             ),
 
-                            ///---------------------- Prize money text container ----------------------
 
                             Padding(
                               padding: EdgeInsets.only(
@@ -174,7 +172,6 @@ class SelectCardWebWidget extends StatelessWidget {
                               ),
                             ),
 
-                            ///-------------------------- User joined container ---------------------------
 
                             Padding(
                               padding: EdgeInsets.only(
