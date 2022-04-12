@@ -283,7 +283,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 
   void calculateBMI() {
-    var convertHeightIntoCm = int.parse(enterHeightController.text.toString()) *
+    var convertHeightIntoCm = double.parse(enterHeightController.text.toString()) *
         int.parse(30.toString());
     var calculateBMI = (int.parse(enterWeightController.text.toString()) /
             convertHeightIntoCm /
