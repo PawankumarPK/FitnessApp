@@ -44,7 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: [
             ///------------------------- Fit Be text ------------------------------
             Text(
-              "Fit Be ",
+              "iFit",
               style: TextStyle(
                   color: ConstantColors.textBlackColor,
                   fontSize: SizeConfig.defaultSize! * Dimens.size8,

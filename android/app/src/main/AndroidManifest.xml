@@ -5,7 +5,7 @@
 
 
        tools:replace="icon, label"
-       android:label="fitness_app"
+       android:label="iFit"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
